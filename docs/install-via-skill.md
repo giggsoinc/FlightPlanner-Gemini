@@ -1,12 +1,12 @@
-# Install via Skill (Gemini CLI)
+# Install via Skill (browser or app)
 
-- Install Gemini CLI and sign in.
-- Clone: `git clone https://github.com/giggsoinc/FlightPlanner-Gemini.git`
-- Run `cd FlightPlanner-Gemini`.
-- Start the CLI with `gemini` from this folder.
-- It loads `GEMINI.md`, which points to the skill.
-- To use it in another project, copy `GEMINI.md` and `skills/` there.
-- Or add the skill file path to that project's `GEMINI.md`.
-- Test with: "Plan a trip for me."
-- Expect the interview first, then a top-3 table.
-- Enable live flight search tools or the skill will not confirm prices.
+- Open Gemini in your browser (gemini.google.com) or the Gemini app. Sign in.
+- Download `skills/unified-flight-planner/SKILL.md` from this repo.
+- Open the **side panel** (menu icon, top left).
+- Click **Customize**.
+- Choose **Skill**, then add a new skill.
+- Upload `SKILL.md`, or paste its contents if asked.
+- Save and make sure the skill is switched on.
+- Start a new chat and say: "Plan a trip for me."
+- It should interview you first, then return a top-3 table.
+- Turn on Google Flights/Hotels access so prices are live.

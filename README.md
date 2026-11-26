@@ -92,23 +92,12 @@ Interview ──▶ Lock goal ──▶ Search (live) ──▶ Top-3 table ─�
 
 ## Install
 
-Step-by-step guides: [Via Gems](docs/install-via-gems.md) · [Via Skill](docs/install-via-skill.md)
+Works in the Gemini **browser or app**. No CLI needed.
 
-### Gemini CLI
-Place this repo (or just `GEMINI.md` and `skills/`) in your project. Gemini CLI loads `GEMINI.md`, which points to the skill.
+- [Via Gems](docs/install-via-gems.md): side panel, Gems, paste the instructions.
+- [Via Skill](docs/install-via-skill.md): side panel, Customize, Skill, upload `SKILL.md`.
 
-```bash
-git clone https://github.com/giggsoinc/FlightPlanner-Gemini.git
-cd FlightPlanner-Gemini
-gemini
-```
-
-### Gemini app (Gem) or Google AI Studio
-1. Create a new **Gem**, or open AI Studio and set **System instructions**.
-2. Paste the contents of [`skills/unified-flight-planner/SKILL.md`](skills/unified-flight-planner/SKILL.md) (without the front matter).
-3. Enable flight/hotel search tools or extensions so results are live.
-
-> Without a live flight search tool the skill will say it cannot confirm prices. That is intended.
+> Without live flight search access the skill will say it cannot confirm prices. That is intended.
 
 ---
 
@@ -116,7 +105,7 @@ gemini
 
 ```
 FlightPlanner-Gemini/
-├── GEMINI.md                          # Entry point for Gemini CLI
+├── docs/                              # Install guides (Gems, Skill)
 ├── skills/unified-flight-planner/
 │   └── SKILL.md                       # The skill (rules + workflow)
 ├── CONTRIBUTING.md
