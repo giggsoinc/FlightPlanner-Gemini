@@ -41,46 +41,93 @@ Interview ──▶ Lock goal ──▶ Search (live) ──▶ Top-3 table ─�
 
 ---
 
-## User journey: a chat session
+## User journeys: three sample chat sessions
 
-> ⚠️ **All fares, times and routes below are illustrative sample data.** Real runs use live tool results.
+> ⚠️ **Everything below is fictional.** Names, cities, dates and fares are invented, illustrative sample data. Real runs use live tool results.
 
-**You:** Plan a trip for me and a friend. We live in different cities. We want to meet somewhere.
+### Journey 1: Family vacation in Florida
 
-**FlightPlanner:** What are you trying to do with this trip? For example: cheapest meetup city, somewhere warm, a specific destination?
+**You (Priya):** Family vacation in Florida for the holidays. Four of us.
 
-**You:** Cheapest place to meet, a long weekend, doesn't need to be warm.
+**FlightPlanner:** What are you trying to do: cheapest flights, a specific city, or best value?
 
-**FlightPlanner:** Is this personal, business, or a mix?
+**You:** Best value, kids are 6 and 9, so no painful connections.
 
-**You:** Personal.
+**FlightPlanner:** Home airport, travel dates, and total flight budget?
 
-**FlightPlanner:** What's your total budget per person, flights only?
+**You:** Pittsburgh. Dec 19 to Dec 27, 2026. Under $2,400 total.
 
-**You:** Under $450 each.
+**FlightPlanner:** Main Cabin okay? Basic Economy is excluded by default.
 
-**FlightPlanner:** Are your dates fixed, or flexible?
-
-**You:** Roughly mid-December, flexible by a few days.
-
-**FlightPlanner:** Should both of you fly on identical departure and return dates, and is Main Cabin fine?
-
-**You:** Yes to both.
+**You:** Main Cabin is fine.
 
 **FlightPlanner:**
-> **Goal locked:** Find the cheapest synchronized round-trip meetup city for two travelers from different origins, mid-December long weekend, Main Cabin, under $450 each. Proceeding on that.
+> **Goal locked:** Best-value round trip for 4 travelers, Pittsburgh to Florida, Dec 19 to Dec 27, 2026, Main Cabin, nonstop preferred, under $2,400 total. Proceeding on that.
 
-*(The skill now searches live data.)*
+| Option & Locked Date Pair | Route | Stops & Duration | All-In Cost (4 travelers) | +/- 3 Day Range | Notes |
+|---|---|---|---|---|---|
+| **1.** Dec 19 to Dec 27 | PIT to MCO (Orlando) | Nonstop · 2h 25m | $1,860 (sample) | $1,640 to $2,310 | Confirmed |
+| **2.** Dec 19 to Dec 27 | PIT to TPA (Tampa) | Nonstop · 2h 30m | $2,040 (sample) | $1,880 to $2,420 | Confirmed |
+| **3.** Dec 19 to Dec 27 | PIT to FLL (Fort Lauderdale) | 1 stop · 4h 10m | $1,790 (sample) | $1,610 to $2,250 | Likely |
 
-*(Top-3 summary table appears here: option and locked dates, route, stops and duration, all-in cost, ±3-day range, notes.)*
-
-- Cheapest option shifts with dates; the ±3-day range shows by how much.
 - Basic Economy fares exist for less but were excluded.
-- Could be wrong if a fare sells out or either of you needs checked bags.
+- Could be wrong if holiday fares jump before you book.
 
-**You:** Go with option 1. Can you check the hotel?
+---
 
-**FlightPlanner:** Destination confirmed. Hotels are now in scope. What nights and budget?
+### Journey 2: Friends reunion from five cities
+
+**You (Jordan):** Reunion for five college friends. We're all in different cities.
+
+**FlightPlanner:** Which cities, and should everyone fly identical dates?
+
+**You:** Chicago, Austin, Seattle, Atlanta, Boston. Yes, same dates for all. Feb 12 to Feb 15, 2027.
+
+**FlightPlanner:** Budget per person, and any city you'd rather avoid?
+
+**You:** $400 each, no preference.
+
+**FlightPlanner:**
+> **Goal locked:** Find the cheapest synchronized meetup city for 5 travelers from ORD, AUS, SEA, ATL, BOS, Feb 12 to Feb 15, 2027, Main Cabin, under $400 each. Proceeding on that.
+
+| Option & Locked Date Pair | Route | Stops & Duration | All-In Cost (5 travelers) | +/- 3 Day Range | Notes |
+|---|---|---|---|---|---|
+| **1. Nashville** · Feb 12 to Feb 15 | 5 origins to BNA | 4 nonstop, 1 with 1 stop | $1,720 (sample) | $1,540 to $2,010 | Confirmed |
+| **2. Denver** · Feb 12 to Feb 15 | 5 origins to DEN | All nonstop | $1,905 (sample) | $1,720 to $2,200 | Confirmed |
+| **3. Kansas City** · Feb 12 to Feb 15 | 5 origins to MCI | 3 nonstop, 2 with 1 stop | $1,980 (sample) | $1,800 to $2,260 | Likely |
+
+- Everyone stays under $400 in option 1 (highest single fare: $398, sample).
+- Could be wrong if the Seattle fare rises; it is the tightest one.
+
+---
+
+### Journey 3: International trip to London
+
+**You (Alex):** Business trip to London. Business class.
+
+**FlightPlanner:** Origin and dates?
+
+**You:** Raleigh. Out Mar 8, back Mar 15, 2027.
+
+**FlightPlanner:** The long-haul leg is likely from New York. Can the short Raleigh to New York positioning flight be Economy?
+
+**You:** Yes, Economy for that part.
+
+**FlightPlanner:** Budget, and are separate tickets okay with a 4 to 5 hour buffer?
+
+**You:** Under $4,500 total. Separate tickets are fine.
+
+**FlightPlanner:**
+> **Goal locked:** Raleigh to London round trip, Mar 8 to Mar 15, 2027, Business on the long-haul leg, Economy for the positioning leg, under $4,500 total. Proceeding on that.
+
+| Option & Locked Date Pair | Route | Stops & Duration | All-In Cost | +/- 3 Day Range | Notes |
+|---|---|---|---|---|---|
+| **1.** Mar 8 to Mar 15 | RDU to JFK (Economy) + JFK to LHR (Business) | 1 positioning + nonstop · 8h 20m | $3,610 (sample) | $3,380 to $4,090 | Confirmed |
+| **2.** Mar 8 to Mar 15 | RDU to EWR (Economy) + EWR to LHR (Business) | 1 positioning + nonstop · 8h 35m | $3,740 (sample) | $3,450 to $4,200 | Confirmed |
+| **3.** Mar 8 to Mar 15 | RDU to LHR (Business) | 1 stop · 11h 40m | $4,360 (sample) | $4,010 to $4,880 | Likely |
+
+- Separate tickets carry no protection if the positioning flight is delayed.
+- Could be wrong if the 4 to 5 hour buffer is cut by a schedule change.
 
 *(Sightseeing and day-by-day plans stay out of scope by design.)*
 
