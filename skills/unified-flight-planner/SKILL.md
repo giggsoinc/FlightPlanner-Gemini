@@ -63,5 +63,5 @@ Then branch:
 ## Defaults
 
   - **Cabin:** Main Cabin (not Basic) unless Business or First is stated.
-  - **Unspecified dual-origin meetup:** DTW + LAX, synchronized, domestic U.S.
+  - **Unspecified dual-origin meetup:** ORD + LAX, synchronized, domestic U.S.
   - **Flexible dates:** Prefer same calendar week when dates are flexible.
