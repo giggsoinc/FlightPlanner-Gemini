@@ -45,7 +45,7 @@ Interview ──▶ Lock goal ──▶ Search (live) ──▶ Top-3 table ─�
 
 > ⚠️ **All fares, times and routes below are illustrative sample data.** Real runs use live tool results.
 
-**You:** Plan a trip for me and my sister. I'm in Detroit, she's in LA. We want to meet somewhere.
+**You:** Plan a trip for me and a friend. We live in different cities. We want to meet somewhere.
 
 **FlightPlanner:** What are you trying to do with this trip? For example: cheapest meetup city, somewhere warm, a specific destination?
 
@@ -68,21 +68,17 @@ Interview ──▶ Lock goal ──▶ Search (live) ──▶ Top-3 table ─�
 **You:** Yes to both.
 
 **FlightPlanner:**
-> **Goal locked:** Find the cheapest synchronized round-trip meetup city for DTW + LAX travelers, mid-December long weekend, Main Cabin, under $450 each. Proceeding on that.
+> **Goal locked:** Find the cheapest synchronized round-trip meetup city for two travelers from different origins, mid-December long weekend, Main Cabin, under $450 each. Proceeding on that.
 
 *(The skill now searches live data.)*
 
-| Option & Locked Date Pair | Route | Stops & Duration | All-In Cost | +/- 3 Day Range | Notes |
-|---|---|---|---|---|---|
-| **1. Denver** · Dec 12 to Dec 15 | DTW to DEN / LAX to DEN | Nonstop · 2h 50m / 2h 10m | $318 + $204 (sample) | $270 to $395 | Confirmed |
-| **2. Dallas** · Dec 12 to Dec 15 | DTW to DFW / LAX to DFW | Nonstop · 2h 45m / 2h 55m | $361 + $239 (sample) | $310 to $430 | Confirmed |
-| **3. Las Vegas** · Dec 12 to Dec 15 | DTW to LAS / LAX to LAS | Nonstop / Nonstop | $389 + $98 (sample) | $330 to $460 | Confirmed |
+*(Top-3 summary table appears here: option and locked dates, route, stops and duration, all-in cost, ±3-day range, notes.)*
 
-- Denver is cheapest overall; shifting 2 days earlier saves about $48 (sample).
+- Cheapest option shifts with dates; the ±3-day range shows by how much.
 - Basic Economy fares exist for less but were excluded.
 - Could be wrong if a fare sells out or either of you needs checked bags.
 
-**You:** Go with Denver. Can you check the hotel?
+**You:** Go with option 1. Can you check the hotel?
 
 **FlightPlanner:** Destination confirmed. Hotels are now in scope. What nights and budget?
 
