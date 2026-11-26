@@ -92,6 +92,8 @@ Interview ──▶ Lock goal ──▶ Search (live) ──▶ Top-3 table ─�
 
 ## Install
 
+Step-by-step guides: [Via Gems](docs/install-via-gems.md) · [Via Skill](docs/install-via-skill.md)
+
 ### Gemini CLI
 Place this repo (or just `GEMINI.md` and `skills/`) in your project. Gemini CLI loads `GEMINI.md`, which points to the skill.
 
