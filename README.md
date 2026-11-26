@@ -8,6 +8,20 @@ It handles single-origin trips, multi-city itineraries, and **group meetups from
 
 ---
 
+## 🚀 Quick start
+
+Open a chat in Gemini (browser or app) and type:
+
+```
+Set up FlightPlanner from https://github.com/giggsoinc/FlightPlanner-Gemini
+```
+
+Then say: `Plan a trip for me.` It will interview you first.
+
+Prefer manual steps? See [Via Gems](docs/install-via-gems.md) or [Via Skill](docs/install-via-skill.md).
+
+---
+
 ## Why a skill, not just a prompt?
 
 Plain chat tends to search too early, invent prices, and bury you in paragraphs. This skill enforces discipline:
